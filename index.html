@@ -5,16 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="acceuil.css">      <!-- comme index.html = style.css est prio? -->
-
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Oh My food</title>
 </head>
 <body>
     <div id="bloc-page">
         <header>
-            <div class="logo">
-                <img src="Images/xxx.png" alt="logo oh my food">
+            <div class="logo">      <!-- tester avec du texte -->
+                <!-- <img src="Images/logo/ohmyfood.png" alt="logo oh my food"> -->
+                <h1>ohmyfood</h1>
             </div>
             <div class="localisation">
                <p><i class="fa-solid fa-location-dot"></i>Paris, Belleville</p>
@@ -22,82 +21,85 @@
         </header>
         <nav>
             <div class="nav_description">
-                <h1>Réservez le menu qui vous convient</h1>
+                <h2>Réservez le menu qui vous convient</h2>
                 <p>Découvrez des restaurants d'exception séléctionnés pas nos soins.</p>
             </div>
             <div class="nav_lien">
-                <a href="#xxx"></a>      <!-- ancre vers les restos -->
+                <a href="#Restaurants">Explorer nos restaurants</a>
             </div>
         </nav>
-        <aside>
-            <h2>Fonctionnement</h2>
-                <div>
-                    <p><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</p>     <!-- ajouter les puces  1 2 3 en before -->
-                </div>
-                <div>
-                    <p><i class="fa-solid fa-list"></i>Composez votre menu</p>
-                </div>
-                <div>
-                    <p><i class="fa-solid fa-store"></i>Dégustez au restaurant</p>
-                </div>
-        </aside>
-        <article>
-            <h2>Restaurants</h2>
-                <div class="liste_resto=)">
-                    <div class="resto">
-                        <a href="restaurantX.html">
-                            <img src="Images/je sais pas le chemin.png" alt="truc qui se mange">        <!-- oublié ce qu'on avait dit sur le bouton nouveau =)-->
-                            <div>
-                                <h3>La palette du goût</h3>
-                                <p>Ménilmontant</p>      <!-- balisé spéciale emplacement ?-->
-                            </div>
-                            <div>
-                                <i class="fa-solid fa-heart"></i>
-                            </div>
-                        </a>
+        <section>
+            <aside>
+                <h2>Fonctionnement</h2>
+                    <div>
+                        <p><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</p>     <!-- ajouter les puces  1 2 3 en before -->
                     </div>
-                    <div class="resto">
-                        <a href="restaurantX.html">
-                            <img src="Images/je sais pas le chemin.png" alt="truc qui se mange">        <!-- oublié ce qu'on avait dit sur le bouton nouveau =)-->
-                            <div>
-                                <h3>La note enchantée</h3>
-                                <p>Charonne</p>      <!-- balisé spéciale emplacement ?-->
-                            </div>
-                            <div>
-                                <i class="fa-solid fa-heart"></i>
-                            </div>
-                        </a>
+                    <div>
+                        <p><i class="fa-solid fa-list"></i>Composez votre menu</p>
                     </div>
-                    <div class="resto">
-                        <a href="restaurantX.html">
-                            <img src="Images/je sais pas le chemin.png" alt="truc qui se mange">
-                            <div>
-                                <h3>À la française</h3>
-                                <p>Cité Rouge</p>      <!-- balisé spéciale emplacement ?-->
-                            </div>
-                            <div>
-                                <i class="fa-solid fa-heart"></i>
-                            </div>
-                        </a>
+                    <div>
+                        <p><i class="fa-solid fa-store"></i>Dégustez au restaurant</p>
                     </div>
-                    <div class="resto">
-                        <a href="restaurantX.html">
-                            <img src="Images/je sais pas le chemin.png" alt="truc qui se mange">
-                            <div>
-                                <h3>Les délices du sens</h3>
-                                <p>Folie-Méricourt</p>      <!-- balisé spéciale emplacement ? -->
-                            </div>
-                            <div>
-                                <i class="fa-solid fa-heart"></i>
-                            </div>
-                        </a>
-                    </div>                    
-                </div>
-        </article>
+            </aside>
+            <article>
+                <h2 id="Restaurants">Restaurants</h2>
+                    <div class="liste_resto=)">
+                        <div class="resto">
+                            <a href="restaurant1.html">
+                                <img src="Images/restaurants/La_palette_du_gout.jpg" alt="truc qui se mange">        <!-- oublié ce qu'on avait dit sur le bouton nouveau =)-->
+                                <div>
+                                    <h3>La palette du goût</h3>
+                                    <p>Ménilmontant</p>      <!-- balisé spéciale emplacement ?-->
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="resto">
+                            <a href="restaurant1.html">
+                                <img src="Images/restaurants/La_note_enchantee.jpg" alt="truc qui se mange">        <!-- oublié ce qu'on avait dit sur le bouton nouveau =)-->
+                                <div>
+                                    <h3>La note enchantée</h3>
+                                    <p>Charonne</p>      <!-- balisé spéciale emplacement ?-->
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="resto">
+                            <a href="restaurant1.html">
+                                <img src="Images/restaurants/A_la_française.jpg" alt="truc qui se mange">
+                                <div>
+                                    <h3>À la française</h3>
+                                    <p>Cité Rouge</p>      <!-- balisé spéciale emplacement ?-->
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="resto">
+                            <a href="restaurant1.html">
+                                <img src="Images/restaurants/Les_delices_des_sens.jpg" alt="truc qui se mange">
+                                <div>
+                                    <h3>Les délices du sens</h3>
+                                    <p>Folie-Méricourt</p>      <!-- balisé spéciale emplacement ? -->
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </a>
+                        </div>                    
+                    </div>
+            </article>
+        </section>
         <footer>
             <div class="logo__bottom">
-                <a href="index.html">
-                    <img src="blabla" alt="logo oh my food">
+                <a href="index.html">      <!-- tester avec du texte -->
+                    <!-- <img src="Images/logo/ohmyfood.png" alt="logo oh my food"> -->
+                    <h1>ohmyfood</h1>
                 </a>
             </div>
             <div>
