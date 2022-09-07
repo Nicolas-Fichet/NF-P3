@@ -45,8 +45,8 @@ body
 
 img
 {
-    height: 150px;
-    width: 150px;
+    max-height: 500px;
+    max-width: 500px;
 }
 
 /*Header*/
@@ -64,14 +64,14 @@ img
 {
     line-height: 40px;
     margin: 0;
-    background-color: #d1d1d1;
+    background-color: #EAEAEA;
 }
 
 /*Navigation*/
 
 .nav
 {
-    background-color: #f2f2f2;
+    background-color: #f6f6f6;
     text-align: center;
     padding: 10%;
 }
@@ -94,6 +94,112 @@ img
 }
 
 .lien a
+{
+    color: white;
+}
+/*SECTION*/
+
+.conteneur
+{
+
+}
+/*SECTION Information*/
+
+.information
+{
+    padding-bottom: 50px;
+    padding-top: 50px;
+    /*display: flex;
+    flex-direction: column;*/
+}
+.information h2
+{
+    margin: 0;
+    padding-left: 30px;
+}
+
+.box
+{
+    width: 300px;
+    height: 60px;
+    margin: auto;
+    line-height: 60px;
+    background-color: #f6f6f6;
+    text-align: center;
+    border-radius: 20px;    
+}
+
+
+
+/*SECTION Restaurants*/
+
+.restaurants
+{
+    background-color: #f6f6f6;
+}
+.restaurants h2
+{
+    margin: 0;
+}
+
+.cards
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+.card
+{
+    background-color: white;
+    width: 90%;
+    height: 250px;
+    margin: auto;
+    border-radius: 20px;
+    
+}
+
+.card img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 70%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.cardflex
+{
+    display: flex;
+    justify-content: space-between;
+    height: 30%;
+    width: 100%;
+}
+.desc
+{
+    padding: 5px;
+}
+.desc *
+{
+    margin: auto;
+    padding-left: 20px;
+    line-height: 25px;
+}
+.like
+{
+    font-size: 25px;
+    padding: 20px;
+}
+
+
+/*FOOTER*/
+
+footer
+{
+    background-color: #353535;
+}
+
+footer a
 {
     color: white;
 }
