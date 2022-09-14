@@ -14,9 +14,9 @@
 
 /*GLOBAL*/
 
-/*Rose : #9356DC*/
-/*Violet : #FF79DA*/
-/*Vert : #99E2D0*/
+/*Rose : #9356DC    */
+/*Violet : #FF79DA  */
+/*Vert : #99E2D0    */
 
 *
 {
@@ -40,7 +40,7 @@ h1
 
 body
 {
-    margin: 0;
+    margin: 0;    
 }
 
 img
@@ -49,7 +49,12 @@ img
     max-width: 500px;
 }
 
+
+
+
+
 /*Header*/
+
 .header
 {
     text-align: center;
@@ -60,12 +65,19 @@ img
     margin: 0;
 }
 
-.emplacement *
+.emplacement p
 {
     line-height: 40px;
     margin: 0;
     background-color: #EAEAEA;
 }
+
+.emplacement i 
+{
+    padding-right: 15px;
+}
+
+
 
 /*Navigation*/
 
@@ -115,7 +127,8 @@ img
 .information h2
 {
     margin: 0;
-    padding-left: 30px;
+    padding-left: 20px;
+    margin-bottom: 40px;
 }
 
 .box
@@ -125,10 +138,31 @@ img
     margin: auto;
     line-height: 60px;
     background-color: #f6f6f6;
-    text-align: center;
-    border-radius: 20px;    
+    border-radius: 10px;    
 }
 
+.box p::before
+{
+    content: "1";
+    color: white;
+    width: min-content;
+    background-color: #9356dc;
+    border-radius: 15px;
+    /*
+    position: relative;
+    top: 5px;
+    left: -10px;
+    */
+    
+}
+
+
+
+.box i
+{
+    padding-left: 30px;
+    padding-right: 20px;
+}
 
 
 /*SECTION Restaurants*/
@@ -140,6 +174,9 @@ img
 .restaurants h2
 {
     margin: 0;
+    margin-bottom: 30px;
+    padding-top: 40px;
+    padding-left: 20px;
 }
 
 .cards
@@ -152,6 +189,7 @@ img
 .card
 {
     background-color: white;
+    max-width: 500px;
     width: 90%;
     height: 250px;
     margin: auto;
@@ -166,6 +204,24 @@ img
     height: 70%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+
+.card::after
+{
+    content: "Nouveau";
+    font-size: small;
+    font-weight: bold;
+    display: block;
+    color: #068061;
+    width: min-content;
+    padding: 5px;
+    background-color: #99E2D0;
+    /*
+    position: relative;
+    top: -240px;
+    left: 260px;
+    */
+
 }
 
 .cardflex
@@ -197,9 +253,21 @@ img
 footer
 {
     background-color: #353535;
+    padding-left: 20px;
+    height: 200px;
 }
 
 footer a
 {
     color: white;
+}
+
+footer h1
+{
+    font-size: larger;
+}
+
+footer p
+{
+    line-height: 1.8em;
 }

@@ -30,9 +30,151 @@ h1
 
 img
 {
-    height: 150px;
-    width: 150px;
+    max-width: 500px;
+    max-height: 500px;
 }
+
+body
+{
+    margin: 0;    
+}
+
+a   /*vérifier si il faut l'appliquer partout*/
+{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+}
+
+.maj-accent
+{
+    text-transform: uppercase;
+}
+
 
 /*Header*/
 
+.logo-header
+{
+    text-align: center;
+}
+
+.logo-header i
+{
+    float: left;
+}
+
+.background *
+{
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+}
+
+/*ARTICLE : le menu*/
+
+.conteneur
+{
+    border-radius: 20px ;
+    background-color: #F6F6F6;
+    position: relative;
+    top: -50px; 
+}
+
+.titre
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.titre i
+{
+    font-size: x-large;
+}
+
+.menu
+{
+    margin: 20px;
+}
+
+.menu h2
+{
+    text-transform: uppercase;
+    font-size: medium;
+    font-weight: normal;
+}
+
+.card
+{
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    /*align-items: center;*/
+    max-width: 400px;
+    max-height: 60px;
+    margin-bottom: 10px;
+}
+
+.card:hover .check      /*PK COMMENT CA MARCHE ??????????*/
+{
+    display: block;
+}
+
+.desc
+{
+    max-width: 80%;
+}
+
+.desc *
+{
+    margin: 0;
+    padding: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.prix
+{
+    width: 20%;
+}
+.prix *
+{
+    margin: 0;
+    padding: 5px;
+}
+
+.check
+{
+    display: none;  
+}
+
+/*FOOTER*/
+
+footer
+{
+    background-color: #353535;
+    padding-left: 20px;
+    height: 200px;
+}
+
+footer a
+{
+    color: white;
+}
+
+footer h1
+{
+    font-size: larger;
+}
+
+footer p
+{
+    line-height: 1.8em;
+}
