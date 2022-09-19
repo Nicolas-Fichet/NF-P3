@@ -9,7 +9,12 @@
         <title>Oh My food</title>
     </head>
     <body>
-        <div id="bloc-page">
+        <div class="loading-center">
+            <div class="progress">
+                <div class="loading-bar"></div>
+            </div>
+        </div>
+        <div class="bloc-page">
             <header class="header">
                     <h1 class="logo-header">ohmyfood</h1>
                 <div class="emplacement">
@@ -29,7 +34,7 @@
                 <aside class="information">
                     <h2>Fonctionnement</h2>
                         <div class="box">
-                            <p><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</p>
+                            <div></div><p><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</p>
                         </div>
                         <div class="box">
                             <p><i class="fa-solid fa-list"></i>Composez votre menu</p>
@@ -44,29 +49,29 @@
                         <div class="cards">
                             <div class="card">
                                 <a href="restaurant1.html">
-                                    <img src="Images/restaurants/La_palette_du_gout.jpg" alt="truc qui se mange">
+                                    <img class="image" src="Images/restaurants/La_palette_du_gout.jpg" alt="truc qui se mange">
                                     <div class="cardflex">
-                                        <div class="desc">
-                                            <h3>La palette du goût</h3>
-                                            <p>Ménilmontant</p>
+                                        <div class="desc overflow">
+                                            <h3 class="overflow">La palette du goût</h3>
+                                            <p class="overflow">Ménilmontant</p>
                                         </div>
-                                        <div class="like">
-                                            <i class="fa-solid fa-heart"></i>
+                                        <div class="like nouveau">
+                                            <i class="favoris fa-regular fa-heart"></i>
                                         </div>
                                     </div>
                                 </a>
                             </div>
-
+                            
                             <div class="card">
                                 <a href="restaurant1.html">
                                     <img src="Images/restaurants/La_note_enchantee.jpg" alt="truc qui se mange">
                                     <div class="cardflex">
-                                        <div class="desc">
-                                            <h3>La note enchantée</h3>
-                                            <p>Charonne</p>
+                                        <div class="desc overflow">
+                                            <h3 class="overflow">La note enchantée</h3>
+                                            <p class="overflow">Charonne</p>
                                         </div>
-                                        <div class="like">
-                                            <i class="fa-solid fa-heart"></i>
+                                        <div class="like nouveau">
+                                            <i class="favoris fa-regular fa-heart"></i>
                                         </div>
                                     </div>
                                 </a>
@@ -76,12 +81,12 @@
                                 <a href="restaurant1.html">
                                     <img src="Images/restaurants/A_la_française.jpg" alt="truc qui se mange">
                                     <div class="cardflex">
-                                        <div class="desc">
-                                            <h3 class="amaj">à la française</h3>
-                                            <p>Cité Rouge</p>
+                                        <div class="desc overflow">
+                                            <h3 class="overflow"> <span class="maj-accent">à</span> la française</h3>
+                                            <p class="overflow">Cité Rouge</p>
                                         </div>
                                         <div class="like">
-                                            <i class="fa-solid fa-heart"></i>
+                                            <i class="favoris fa-regular fa-heart"></i>
                                         </div>
                                     </div>
                                 </a>
@@ -91,12 +96,12 @@
                                 <a href="restaurant1.html">
                                     <img src="Images/restaurants/Le_delice_des_sens.jpg" alt="truc qui se mange">
                                     <div class="cardflex">
-                                        <div class="desc">
-                                            <h3>Le délice des sens</h3>
-                                            <p>Folie-Méricourt</p>
+                                        <div class="desc overflow">
+                                            <h3 class="overflow">Le délice des sens</h3>
+                                            <p class="overflow">Folie-Méricourt</p>
                                         </div>
                                         <div class="like">
-                                            <i class="fa-solid fa-heart"></i>
+                                            <i class="favoris fa-regular fa-heart"></i>
                                         </div>
                                     </div>
                                 </a>
@@ -105,15 +110,15 @@
                 </article>
             </section>
             <footer>
-                <div class="logo-bottom">
+                <div >
                     <a href="index.html">
-                        <h1>ohmyfood</h1>
+                        <h1 class="logo-footer">ohmyfood</h1>
                     </a>
                 </div>
                 <div>
-                    <p>
-                        <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a><br />
-                        <a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a><br />
+                    <p class="lien-utile">
+                        <a href="#"><i class="icone fa-solid fa-utensils"></i>Proposer un restaurant</a><br />
+                        <a href="#"><i class="icone fa-solid fa-handshake-angle"></i>Devenir partenaire</a><br />
                         <a href="#">Mentions légales</a><br />
                         <a href="mailto:test@test.com">Contact</a><br />
                     </p>

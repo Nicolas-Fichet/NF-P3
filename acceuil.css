@@ -14,13 +14,18 @@
 
 /*GLOBAL*/
 
-/*Rose : #9356DC    */
-/*Violet : #FF79DA  */
+/*Violet : #9356DC    */
+/*Rose : #FF79DA  */
 /*Vert : #99E2D0    */
 
 *
 {
     font-family: 'roboto', Arial, Helvetica, sans-serif;
+}
+
+h1
+{
+    font-family: 'shrikhand',Arial, Helvetica, sans-serif;
 }
 
 a   /*vérifier si il faut l'appliquer partout*/
@@ -33,14 +38,18 @@ a   /*vérifier si il faut l'appliquer partout*/
 
 }
 
-h1
+.maj-accent
 {
-    font-family: 'shrikhand',Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
 }
 
 body
 {
-    margin: 0;    
+    background-color: white;
+    margin: 0;
+    max-width: 100%;
 }
 
 img
@@ -49,8 +58,100 @@ img
     max-width: 500px;
 }
 
+/*loading screen*/
 
+.loading-center
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 100vw;
+}
 
+.progress
+{
+    width: 80%;
+    height: 20px;
+    border: 1px solid #068061;
+    animation: progress 50ms 3000ms both;
+}
+
+@keyframes progress
+{
+    0%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+.loading-bar
+{
+    width: auto;
+    height: -webkit-fill-available;
+    margin: 0;
+    background-color: #99E2D0;
+    animation: loading-bar 3000ms 50ms both;
+    transform: scaleX(0.5);
+    transform-origin: 0% 50%;
+}
+
+@keyframes loading-bar
+{
+    0%      /*from*/
+    {
+        transform: scaleX(0);
+    }
+    17%
+    {
+        transform: scaleX(0.18);
+    }
+    24%
+    {
+        transform: scaleX(0.4);
+        animation-timing-function: cubic-bezier(.9,0,.1,1);
+
+    }
+    60%
+    {
+        transform: scaleX(0.81);
+        animation-timing-function: cubic-bezier(.25,0.25,1);
+    }
+    100%    /*to*/
+    {
+        transform: scaleX(1);
+    }   
+}
+
+.bloc-page
+{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: bloc-page 200ms 3050ms both;
+}
+
+@keyframes bloc-page
+{
+    0%
+    {
+        opacity: 0;
+    }
+    90%
+    {
+        opacity: 0.1;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
 
 
 /*Header*/
@@ -59,6 +160,7 @@ img
 {
     text-align: center;
 }
+
 .logo-header
 {
     line-height: 2em;
@@ -76,7 +178,6 @@ img
 {
     padding-right: 15px;
 }
-
 
 
 /*Navigation*/
@@ -115,6 +216,7 @@ img
 {
 
 }
+
 /*SECTION Information*/
 
 .information
@@ -141,23 +243,6 @@ img
     border-radius: 10px;    
 }
 
-.box p::before
-{
-    content: "1";
-    color: white;
-    width: min-content;
-    background-color: #9356dc;
-    border-radius: 15px;
-    /*
-    position: relative;
-    top: 5px;
-    left: -10px;
-    */
-    
-}
-
-
-
 .box i
 {
     padding-left: 30px;
@@ -169,8 +254,9 @@ img
 
 .restaurants
 {
-    background-color: #f6f6f6;
+    background-color: #f2f2f2;
 }
+
 .restaurants h2
 {
     margin: 0;
@@ -186,8 +272,13 @@ img
     gap: 20px;
     padding-bottom: 50px;
 }
+
 .card
 {
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    justify-content: center;
     background-color: white;
     max-width: 500px;
     width: 90%;
@@ -206,23 +297,19 @@ img
     border-top-right-radius: 20px;
 }
 
-.card::after
+.nouveau::before
 {
     content: "Nouveau";
+    background-color: #99E2D0;
     font-size: small;
     font-weight: bold;
-    display: block;
     color: #068061;
-    width: min-content;
-    padding: 5px;
-    background-color: #99E2D0;
-    /*
+    padding: 6px;
     position: relative;
-    top: -240px;
-    left: 260px;
-    */
-
+    top: -190px;
+    left: 30px;
 }
+
 
 .cardflex
 {
@@ -231,24 +318,48 @@ img
     height: 30%;
     width: 100%;
 }
+
 .desc
 {
     padding: 5px;
 }
-.desc *
+
+.overflow
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.desc h3, .desc p       /*trouver nom = nom resto + lieu*/
 {
     margin: auto;
     padding-left: 20px;
     line-height: 25px;
 }
+
 .like
 {
-    font-size: 25px;
     padding: 20px;
 }
 
+.favoris        /*a corriger en dessous de 345px*/
+{
+    font-size: 25px;
+    color: pink;
+}
+
+.favoris:hover      /*ANIMATION*/
+{
+    background-color: blue;
+}
 
 /*FOOTER*/
+
+footer *
+{
+    color: white;
+}
 
 footer
 {
@@ -257,17 +368,20 @@ footer
     height: 200px;
 }
 
-footer a
-{
-    color: white;
-}
-
-footer h1
+.logo-footer
 {
     font-size: larger;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-footer p
+.lien-utile
 {
-    line-height: 1.8em;
+    line-height: 30px;
+    margin: 0;
+}
+
+.icone
+{
+    width: 30px;
 }
