@@ -85,7 +85,7 @@ img
     }
     100%
     {
-        opacity: 1;
+        opacity: 0;
     }
 }
 
@@ -134,7 +134,9 @@ img
     position: absolute;
     top: 0px;
     left: 0px;
-    animation: bloc-page 200ms 3050ms both;
+    /*animation: bloc-page 200ms 3050ms both;*/
+    animation: bloc-page 20ms 50ms both;
+
 }
 
 @keyframes bloc-page
@@ -195,18 +197,19 @@ img
     padding-right: 5%;
 }
 
-.lien
+.explorer
 {
     margin-left: auto;
     margin-right: auto;
     height: auto;
     max-width: 220px;
-    background-color: #9356dc;
     border-radius: 25px;
     line-height: 50px;
+    background: -webkit-linear-gradient(270deg ,#FF79DA, #9356DC);
+
 }
 
-.lien a
+.explorer a
 {
     color: white;
 }
@@ -233,6 +236,15 @@ img
     margin-bottom: 40px;
 }
 
+.bubulle
+{
+    float: left;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #9356dc;          /* le relou*/
+}
+
 .box
 {
     width: 300px;
@@ -240,7 +252,8 @@ img
     margin: auto;
     line-height: 60px;
     background-color: #f6f6f6;
-    border-radius: 10px;    
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.10);
 }
 
 .box i
@@ -249,6 +262,17 @@ img
     padding-right: 20px;
 }
 
+.purple 
+{
+    background-color: pink;
+    filter: brightness(1);
+    opacity: 1;
+}
+
+.fa-store
+{
+    color: #9356DC;
+}
 
 /*SECTION Restaurants*/
 
@@ -277,7 +301,6 @@ img
 {
     display: flex;
     flex-direction: column;
-    align-items: top;
     justify-content: center;
     background-color: white;
     max-width: 500px;
@@ -285,7 +308,7 @@ img
     height: 250px;
     margin: auto;
     border-radius: 20px;
-    
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.10);
 }
 
 .card img
@@ -331,7 +354,7 @@ img
     text-overflow: ellipsis;
 }
 
-.desc h3, .desc p       /*trouver nom = nom resto + lieu*/
+.desc h3, .desc p       /*trouver class = nom resto + lieu*/
 {
     margin: auto;
     padding-left: 20px;
@@ -343,15 +366,21 @@ img
     padding: 20px;
 }
 
-.favoris        /*a corriger en dessous de 345px*/
+.favoris, .liked        /*a corriger en dessous de 345px*/
 {
     font-size: 25px;
     color: pink;
 }
 
+.liked
+{
+    display: none;      /*bypass par fa-solid*/
+}
+
 .favoris:hover      /*ANIMATION*/
 {
     background-color: blue;
+    display: none;
 }
 
 /*FOOTER*/

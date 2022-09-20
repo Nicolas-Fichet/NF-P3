@@ -1,0 +1,40 @@
+
+/*Violet : #9356DC    */
+/*Rose : #FF79DA  */
+
+body *
+{
+  /* border: 1px solid gray;   */
+}
+
+.like
+{
+    font-size: 10em;
+
+    background: -webkit-linear-gradient(0deg ,#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    left: 0;
+}
+
+.unlike
+{
+    font-size: 9.9em;
+    color: black;
+}
+
+.favoris
+{
+    width: 10em;
+    margin: auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.favoris:hover .like
+{
+    left: -164px;
+    transition-duration: 350ms;
+
+}

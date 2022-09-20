@@ -4,37 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="restaurant.css">
+    <link rel="stylesheet" href="menu-déroulant.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>La palette du goût</title>
+    <title>ça doit dérouler</title>
 </head>
-<body>
-    <div id="bloc-page">
-        <header class="header">
-            <div class="logo-header">
-                <a href="index.html">                    
-                        <i class="retour-index fa-solid fa-arrow-left"></i>                    
-                        <h1>ohmyfood</h1>
-                </a>
-            </div>
-            <div class="background">
-                <div class="bg-image">
-
-                </div>
-               <!-- <img src="Images/restaurants/La_palette_du_gout.jpg" alt="truc qui se mange"> -->
-            </div>
-        </header>
+    <body>
         <article class="conteneur">
-            <div class="restaurant">
+            <div class="restaurant delay-0">
                 <h1>La palette du goût</h1>
                 <i class="favoris fa-regular fa-heart"></i>
             </div>
             <div class="menu">
                 <form>
                     <div class="cards">   <!-- CARTE DES ENTREES -->
-                        <h2 class="titre">entrées</h2>
+                        <h2 class="titre delay-200">entrées</h2>
 
-                        <div class="card">
+                        <div class="card delay-400" >
                             <div class="desc overflow">
                                 <h3 class="overflow">Fricassée d'escargot</h3>
                                 <p class="overflow">Au piment d'Espelette</p>
@@ -47,7 +32,7 @@
                             </div>
                         </div>
 
-                        <div class="card">
+                        <div class="card delay-600" >
                             <div class="desc overflow">
                                 <h3 class="overflow">Foie gras de canard mi-cuit</h3>
                                 <p class="overflow">Et ses copeaux de truffe noire</p>
@@ -60,7 +45,7 @@
                             </div>
                         </div> 
 
-                        <div class="card">
+                        <div class="card delay-800" >
                             <div class="desc overflow">
                                 <h3 class="overflow">Oeuf au plat</h3>
                                 <p class="overflow">Assaisoné à la truffe sur son lit de caviar</p>
@@ -88,9 +73,9 @@
                     </div>
 
                     <div class="cards">   <!-- CARTE DES PLATS -->
-                        <h2 class="titre">plats</h2>      <!-- ajouter sousligné avec before -->   
+                        <h2 class="titre delay-1000">plats</h2>     <!-- ajouter sousligné avec before  -->
 
-                        <div class="card">
+                        <div class="card delay-1200">
                             <div class="desc overflow">
                                 <h3 class="overflow">Filet de boeuf aux herbes</h3>
                                 <p class="overflow">Accompagné de ribambelle de légumes</p>
@@ -103,7 +88,7 @@
                             </div>
                         </div>
 
-                        <div class="card">
+                        <div class="card delay-1400">
                             <div class="desc overflow">
                                 <h3 class="overflow">Parmentier de queue de boeuf</h3>
                                 <p class="overflow"> <span class="maj-accent">à</span> la truffe noire sur sa purrée de panais</p>
@@ -116,7 +101,7 @@
                             </div>
                         </div> 
 
-                        <div class="card">
+                        <div class="card delay-1600">
                             <div class="desc overflow">
                                 <h3 class="overflow">Filet de turbot</h3>
                                 <p class="overflow">Aux agrumes</p>
@@ -144,8 +129,8 @@
                     </div>
 
                     <div class="cards">   <!-- CARTE DES DESSERTS -->
-                        <h2 class="titre">desserts</h2>
-                        <div class="card">
+                        <h2 class="titre delay-1800">desserts</h2>
+                        <div class="card delay-2000">
                             <div class="desc overflow">
                                 <h3 class="overflow">Paris-Brest</h3>
                                 <p class="overflow">Revisité</p>
@@ -158,7 +143,7 @@
                             </div>
                         </div>
 
-                        <div class="card">
+                        <div class="card delay-2200">
                             <div class="desc overflow">
                                 <h3 class="overflow">Macaron au chocolat d'exception</h3>
                                 <p class="overflow">Et glace à la vanille de Madagascar</p>
@@ -171,7 +156,7 @@
                             </div>
                         </div> 
 
-                        <div class="card">
+                        <div class="card delay-2400">
                             <div class="desc overflow">
                                 <h3 class="overflow">Mousse au chocolat</h3>
                                 <p class="overflow">Au piment d'Espelette et à la truffe noire</p>
@@ -198,28 +183,12 @@
                         </div>
                     </div>
 
-                    <div class="submit">
+                    <div class="submit delay-2600">
                         <input type="submit" value="Commander" />
                     </div>
                 </form>
             </div>
         </article>
-        <footer>
-            <div>
-                <a href="index.html">
-                    <h1 class="logo-footer">ohmyfood</h1>
-                </a>
-            </div>
-            <div>
-                <p>
-                    <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a><br />
-                    <a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a><br />
-                    <a href="#">Mentions légales</a><br />
-                    <a href="mailto:test@test.com">Contact</a><br />
-                </p>
-            </div>
-        </footer>
 
-    </div>   
-</body>
+    </body>
 </html>
