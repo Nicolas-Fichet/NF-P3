@@ -1,0 +1,13 @@
+
+/*Modification design menu */
+.tableau
+{
+    grid-template-columns: repeat(2, 48%);
+    grid-template-rows: repeat(2, 50%);
+    column-gap: 4%;
+}
+.submit
+{
+    display: flex;
+    align-items: flex-end;
+}

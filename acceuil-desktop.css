@@ -1,0 +1,41 @@
+/*Modification design aside "fonctionnement"*/
+.titre-fonctionnement
+{
+    padding: 0;
+    text-align: center;
+}
+
+.boxes
+{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: 60px;
+    grid-column-gap: 5%;
+}
+
+.tablet-1
+{
+    grid-area: auto;
+}
+.tablet-2
+{
+    grid-area: auto;
+}
+.tablet-3
+{
+    grid-area: auto;
+}
+
+
+
+/*Modification desgin article "cards"*/
+
+.cards
+{
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(1, 100%);
+    grid-column-gap: 2px;
+    grid-row-gap: 0px;
+}
+

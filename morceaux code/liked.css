@@ -1,0 +1,75 @@
+
+/*Violet : #9356DC    */
+/*Rose : #FF79DA  */
+
+body *
+{
+  /*border: 1px solid gray;*/
+}
+/*
+.nouveau::before
+{
+    content: "Nouveau";
+    background-color: #99E2D0;
+    font-size: small;
+    font-weight: bold;
+    color: #068061;
+    padding: 6px;
+    position: relative;
+    top: 190px;
+    left: 30px;
+}
+*/
+
+/* ---------------------- */
+
+.favoris
+{
+    width: 25px;
+    margin: auto;
+    white-space: nowrap;
+    /*overflow: hidden;*/
+}
+
+.unlike
+{
+    font-size: 25px;
+    color: black;
+}
+
+.like
+{
+    font-size: 25px;
+
+    background: -webkit-linear-gradient(0deg ,#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    left: -29px;
+    transform: scale(0);
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+.favoris:hover .like
+{
+    /*left: -164px;       pk cette dimension de 4px entre les éléments ?*/
+    /*animation: favoris 500ms ease-in-out both ;*/
+
+    transform: scale(1);
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+/*
+@keyframes favoris
+{
+    0%
+    {
+        margin-left: 0;
+    }
+    100%
+    {
+        margin-left: -164px;
+    }
+}
+*/

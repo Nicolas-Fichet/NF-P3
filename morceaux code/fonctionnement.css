@@ -1,0 +1,72 @@
+.information
+{
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding: 20px;
+}
+.titre-fonctionnement     /*titre Aside*/
+{
+    margin: auto;
+    margin-bottom: 40px;
+    max-width: 300px;
+    padding-left: 10px;
+}
+
+.boxes
+{
+    counter-reset: info;                    /* On initialise le compteur à 0 */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+}
+
+.box
+{
+    
+    width: 300px;
+    height: 60px;
+    margin: auto;
+    background-color: #f6f6f6;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.10);
+}
+
+p
+{
+    height: 20px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+p::before
+{
+    counter-increment: info;        /* On incrémente le compteur*/
+    content: counter(info);         /* On affiche le compteur */
+    vertical-align: bottom;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    background-color: #9356DC;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    position: relative;
+    left: -56px;
+}
+
+
+.icones
+{
+    padding-right: 20px;
+}
+
+.purple 
+{
+    background: rgba(147, 86, 220, .3);
+}
+

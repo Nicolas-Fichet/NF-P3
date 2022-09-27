@@ -1,0 +1,14 @@
+/*Modification design menu*/
+
+.tableau
+{
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(2, 50%);
+    /*grid-column-gap: 10px;*/
+    /*justify-items: center;*/
+}
+
+.submit
+{
+    grid-area: 2 / 2 / 3 / 3;
+}

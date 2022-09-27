@@ -1,3 +1,12 @@
+
+/*  debug   
+
+*
+{ 
+    background: rgba(0 0 100 / 0.5 )
+}
+*/
+
 @font-face
 {
     font-family: 'roboto' ;
@@ -28,7 +37,7 @@ h1
     font-family: 'shrikhand',Arial, Helvetica, sans-serif;
 }
 
-a   /*vérifier si il faut l'appliquer partout*/
+a
 {
     display: inline-block;
     width: 100%;
@@ -49,7 +58,8 @@ body
 {
     background-color: white;
     margin: 0;
-    max-width: 100%;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 img
@@ -91,7 +101,6 @@ img
 
 .loading-bar
 {
-    width: auto;
     height: -webkit-fill-available;
     margin: 0;
     background-color: #99E2D0;
@@ -102,7 +111,7 @@ img
 
 @keyframes loading-bar
 {
-    0%      /*from*/
+    0%
     {
         transform: scaleX(0);
     }
@@ -121,7 +130,7 @@ img
         transform: scaleX(0.81);
         animation-timing-function: cubic-bezier(.25,0.25,1);
     }
-    100%    /*to*/
+    100%
     {
         transform: scaleX(1);
     }   
@@ -129,14 +138,13 @@ img
 
 .bloc-page
 {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0px;
     left: 0px;
     /*animation: bloc-page 200ms 3050ms both;*/
     animation: bloc-page 20ms 50ms both;
-
 }
 
 @keyframes bloc-page
@@ -154,6 +162,7 @@ img
         opacity: 1;
     }
 }
+
 
 
 /*Header*/
@@ -188,7 +197,7 @@ img
 {
     background-color: #f6f6f6;
     text-align: center;
-    padding: 10%;
+    padding: 35px;
 }
 
 .titres h2
@@ -206,19 +215,20 @@ img
     border-radius: 25px;
     line-height: 50px;
     background: -webkit-linear-gradient(270deg ,#FF79DA, #9356DC);
-
 }
 
-.explorer a
+.explorer:hover
+{
+    opacity: 0.6;
+}
+
+.lien-interne
 {
     color: white;
 }
+
 /*SECTION*/
 
-.conteneur
-{
-
-}
 
 /*SECTION Information*/
 
@@ -226,47 +236,73 @@ img
 {
     padding-bottom: 50px;
     padding-top: 50px;
-    /*display: flex;
-    flex-direction: column;*/
+    padding: 20px;
 }
-.information h2
+.titre-fonctionnement     /*titre Aside*/
 {
-    margin: 0;
-    padding-left: 20px;
+    margin: auto;
     margin-bottom: 40px;
+    max-width: 300px;
+    padding-left: 10px;
 }
 
-.bubulle
+.boxes
 {
-    float: left;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background-color: #9356dc;          /* le relou*/
+    counter-reset: info;                    /* On initialise le compteur à 0 */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
 }
 
 .box
 {
+    
     width: 300px;
     height: 60px;
     margin: auto;
-    line-height: 60px;
     background-color: #f6f6f6;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.10);
 }
 
-.box i
+.texte
 {
-    padding-left: 30px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.texte::before
+{
+    counter-increment: info;        /* On incrémente le compteur*/
+    content: counter(info);         /* On affiche le compteur */
+    vertical-align: bottom;
+    display: inline-block;
+    color: white;
+    font-size: small;
+    font-weight: normal;
+    background-color: #9356DC;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    position: relative;
+    left: -48px;
+}
+
+
+.icones
+{
     padding-right: 20px;
 }
 
 .purple 
 {
-    background-color: pink;
-    filter: brightness(1);
-    opacity: 1;
+    background: rgba(147, 86, 220, .3);
 }
 
 .fa-store
@@ -274,26 +310,76 @@ img
     color: #9356DC;
 }
 
-/*SECTION Restaurants*/
 
-.restaurants
+
+/*
+.information
 {
-    background-color: #f2f2f2;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.titre-fonctionnement
+{
+    margin: auto;
+    margin-bottom: 40px;
+    max-width: 300px;
+    padding-left: 10px;
+}
+.box
+{
+    max-width: 300px;
+    min-height: 60px;
+    margin: auto;
+    text-align: center;
+    line-height: 60px;
+    background-color: #f6f6f6;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.10); 
 }
 
-.restaurants h2
+.box i
 {
-    margin: 0;
+    padding-right: 20px;
+}
+
+.purple 
+{
+    background: rgba(147, 86, 220, .3);
+}
+
+.fa-store
+{
+    color: #9356DC;
+}
+
+.fa-list, .fa-mobile-screen-button
+{
+    opacity: 0.6;
+}
+*/
+
+/*SECTION Restaurants*/
+
+.liste-restaurants
+{
+    background-color: #f6f6f6;
+}
+
+.titre-restaurants
+{
+    /*margin: auto;*/
     margin-bottom: 30px;
     padding-top: 40px;
-    padding-left: 20px;
+    max-width: 470px;
+    padding-left: 30px;
+
 }
 
 .cards
 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    display: grid;
+
+
     padding-bottom: 50px;
 }
 
@@ -307,6 +393,8 @@ img
     width: 90%;
     height: 250px;
     margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 20px;
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.10);
 }
@@ -319,20 +407,6 @@ img
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-
-.nouveau::before
-{
-    content: "Nouveau";
-    background-color: #99E2D0;
-    font-size: small;
-    font-weight: bold;
-    color: #068061;
-    padding: 6px;
-    position: relative;
-    top: -190px;
-    left: 30px;
-}
-
 
 .cardflex
 {
@@ -361,27 +435,63 @@ img
     line-height: 25px;
 }
 
-.like
+/*"Bouton" like*/
+
+.favoris
 {
-    padding: 20px;
+    margin-left: auto;
+    white-space: nowrap;
+    margin-top: auto;
+    margin-bottom: auto;    
 }
 
-.favoris, .liked        /*a corriger en dessous de 345px*/
+.unlike
 {
     font-size: 25px;
-    color: pink;
+    color: black;
 }
 
-.liked
+.like
 {
-    display: none;      /*bypass par fa-solid*/
+    font-size: 25px;
+
+    background: -webkit-linear-gradient(0deg ,#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    left: -29px;    /* =25+4px entre les 2 BFA qual que soit la taille de l'élément */
+    transform: scale(0);
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
 }
 
-.favoris:hover      /*ANIMATION*/
+.favoris:hover .like
 {
-    background-color: blue;
-    display: none;
+    transform: scale(1);
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
 }
+
+/*Nouveaux Restaurants*/
+
+    /*Ajouter class nouveau apres class favoris */
+
+.nouveau::before
+{
+    display: inline;
+    content: "Nouveau";
+    background-color: #99E2D0;
+    font-size: small;
+    font-weight: bold;
+    color: #068061;
+    width: max-content;
+    padding: 6px;
+    position: relative;
+    top: -190px;
+    left: 30px;
+    pointer-events: none;   /*pour désactiver le hover sur l'élément*/
+}
+
 
 /*FOOTER*/
 
