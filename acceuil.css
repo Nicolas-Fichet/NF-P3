@@ -70,7 +70,7 @@ img
 
 /*loading screen*/
 
-.loading-center
+.loading-center     /*écran de chargement*/
 {
     display: flex;
     align-items: center;
@@ -79,12 +79,13 @@ img
     max-width: 100vw;
 }
 
-.progress
+.progress       /*barre de chargement*/
 {
     width: 80%;
     height: 20px;
     border: 1px solid #068061;
-    animation: progress 50ms 2000ms both;           /*affichage barre de chargement*/
+    animation: progress 50ms 2000ms both;           /*durée affichage barre de chargement*/
+    /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
 }
 
 @keyframes progress
@@ -99,17 +100,17 @@ img
     }
 }
 
-.loading-bar
+.loading-bar    /*animation de chargement*/
 {
     height: -webkit-fill-available;
     margin: 0;
     background-color: #99E2D0;
-    animation: loading-bar 2000ms 50ms both;        /*temps barre de chargement*/
+    animation: loading-bar 2000ms 50ms both;        /*temps du chargement*/
     transform: scaleX(0.5);
     transform-origin: 0% 50%;
 }
 
-@keyframes loading-bar
+@keyframes loading-bar      /*effet du chargement*/
 {
     0%
     {
@@ -143,9 +144,10 @@ img
     position: absolute;
     top: 0px;
     left: 0px;
-        /*délai apparition page*/
+        /*délai apparition bloc-page*/
     animation: bloc-page 200ms 2050ms both;
-    /*animation: bloc-page 20ms 50ms both;       affichage rapide*/        
+    /*animation: bloc-page 20ms 50ms both;       affichage rapide*/
+    /*animation: name duration timing-function delay iteration-count direction fill-mode;*/       
 }
 
 @keyframes bloc-page
@@ -192,16 +194,10 @@ img
     background: transparent;
 }
 
-.emplacement i 
-{
-
-}
-
 .search-box
 {
     border: none;
 }
-
 
 /*Navigation*/
 
@@ -472,7 +468,7 @@ img
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
-    left: -29px;    /* =25+4px entre les 2 BFA qual que soit la taille de l'élément */
+    left: -29px;    /* =25+4px entre les 2 BFA quel que soit la taille de l'élément */
     transform: scale(0);
     transition-duration: 500ms;
     transition-timing-function: ease-in-out;

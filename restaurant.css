@@ -175,7 +175,7 @@ a
 .tableau
 {
     display: grid;
-    grid-template-columns: 100%;         /*xfr = fraction de l'espace disponible*/
+    grid-template-columns: 100%;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
@@ -240,7 +240,7 @@ h3, p
     
 }
 
-.card:hover .check      /*fonctionne seulement avec les enfants direct */
+.card:hover .check
 {
     margin-right: 0px;
     transition-duration: 500ms;
