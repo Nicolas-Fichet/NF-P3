@@ -1,9 +1,14 @@
 
 /*Modification design menu */
+.conteneur
+{
+    padding-bottom: 30px;
+}
+
 .tableau
 {
     grid-template-columns: repeat(2, 48%);
-    grid-template-rows: repeat(2, 50%);
+    grid-template-rows: repeat(2, 1fr);
     column-gap: 4%;
 }
 .submit

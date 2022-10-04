@@ -9,6 +9,9 @@
 {
     
     display: grid;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
     grid-template-columns: repeat(3, 30%);
     grid-template-rows: 60px;
     grid-column-gap: 5%;
@@ -38,4 +41,3 @@
     grid-column-gap: 2px;
     grid-row-gap: 0px;
 }
-

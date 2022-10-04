@@ -2,6 +2,9 @@
 
 .tableau
 {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
     grid-template-columns: repeat(3, 30%);
     grid-template-rows: repeat(2, 50%);
     /*grid-column-gap: 10px;*/
