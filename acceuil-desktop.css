@@ -5,7 +5,7 @@
     text-align: center;
 }
 
-.boxes
+.boites-fonctionnement
 {
     
     display: grid;
@@ -17,24 +17,9 @@
     grid-column-gap: 5%;
 }
 
-.tablet-1
-{
-    grid-area: auto;
-}
-.tablet-2
-{
-    grid-area: auto;
-}
-.tablet-3
-{
-    grid-area: auto;
-}
-
-
-
 /*Modification desgin article "cards"*/
 
-.cards
+.cartes-restaurants
 {
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(1, 100%);

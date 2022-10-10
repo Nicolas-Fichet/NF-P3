@@ -4,33 +4,8 @@
     padding: 0;
     text-align: center;
 }
-/*          problemes en dessous de 700px 
-.boxes
-{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-}
-    
-.tablet-1
-{
-    grid-area: 1 / 2 / 2 / 4;
-}
-.tablet-2
-{
-    grid-area: 1 / 4 / 2 / 6;
-}
-.tablet-3
-{
-    grid-area: 2 / 3 / 3 / 5;
-}
 
-
-/*Modification desgin article "cards"*/
-
-.cards
+.cartes-restaurants
 {
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(2, 50%);

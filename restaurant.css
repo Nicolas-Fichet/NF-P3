@@ -27,13 +27,7 @@ h1
 {
     display: none;
 }
-/*
-img
-{
-    max-width: 500px;
-    max-height: 500px;
-}
-*/
+
 body
 {
     margin: 0;    
@@ -52,6 +46,13 @@ a
 {
     margin: 0px;
     text-transform: uppercase;
+}
+
+.bloc-page
+{
+    min-height: 100vh;
+    display: grid;      
+    grid-template-rows: auto 1fr auto;     /*sticky footer grandes résolutions*/
 }
 
 /*Header*/
