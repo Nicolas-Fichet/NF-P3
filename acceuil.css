@@ -102,6 +102,7 @@ img
 
 .barre-chargement
 {
+    height: 100%;
     height: -webkit-fill-available;
     margin: 0;
     background-color: #99E2D0;
