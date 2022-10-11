@@ -149,6 +149,7 @@ img
 
     display: grid;      
     grid-template-rows: auto auto 1fr auto;     /*sticky footer grandes résolutions*/
+    grid-template-columns: 100%;
 }
 
 @keyframes bloc-page
