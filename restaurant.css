@@ -1,3 +1,13 @@
+
+/*  debug   
+
+*
+{ 
+    background: rgba(0 0 100 / 0.5 )
+}
+*/  
+
+
 @font-face
 {
     font-family: 'roboto' ;
@@ -52,7 +62,8 @@ a
 {
     min-height: 100vh;
     display: grid;      
-    grid-template-rows: auto 1fr auto;     /*sticky footer grandes résolutions*/
+    grid-template-rows: auto 1fr auto;    /* sticky footer grandes résolutions */
+    grid-template-columns: 100%;
 }
 
 /*Header*/
@@ -314,7 +325,7 @@ input[type=submit]:hover
 {
     0%
     {
-        margin-left: -150px;
+        margin-left: -9999px;
     }
     100%
     {
